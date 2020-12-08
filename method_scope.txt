@@ -1,0 +1,27 @@
+class Sample
+  def method_1_public
+    puts "public method"
+    method_2_private
+    method_3_protected
+  end
+
+  private 
+    def method_2_private
+      puts "call to private method succeeded!"
+    end  
+  protected
+    def method_3_protected
+      puts "call to protected method succeeded!"
+    end
+end
+
+class Child
+  def sublass_method
+    puts "child class method"
+    Sample.method_2_private
+  end
+end
+    
+
+obj = Child.new
+obj.sublass_method

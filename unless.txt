@@ -1,0 +1,16 @@
+=begin
+unless <condition>
+   code...
+else
+   code....
+end
+
+=end
+
+puts 'Enter the number : '
+var = gets.chomp.to_i
+unless var > 7
+  puts 'Less than or equal to 7.'
+else
+  puts 'Greater than 7.'
+end

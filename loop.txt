@@ -1,0 +1,38 @@
+=begin
+while <condition> do
+   code...
+end
+--------------------------------------------------
+until <condition> do
+   code...
+end
+
+begin
+   code
+end until <condition>
+---------------------------------------------------
+n.times do
+  code........
+end
+---------------------------------------------------
+=end
+
+puts "Using while  :"
+i = 1
+while i <= 5 do
+  puts i
+  i+=1
+end
+puts "Using until  :"
+until i == 0 do
+  puts i
+  i-=1
+end
+puts "Using times  :"
+j = 1
+4.times do
+  puts j.to_s + " time"
+  j+=1
+end
+
+

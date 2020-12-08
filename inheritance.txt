@@ -1,0 +1,24 @@
+=begin
+
+=end
+
+
+class Parent
+  def disp
+    puts "parent class method"
+  end
+  def print
+    puts "parent class method"
+  end
+end
+
+class Child < Parent
+  def print
+    puts " child class method"
+  end
+end
+
+
+obj = Child.new
+obj.disp
+obj.print

@@ -1,0 +1,25 @@
+=begin
+for <variable> in <expression> do 
+   code...
+end
+----------------------------------------
+(expression).each do |variable| 
+  code....
+end
+----------------------------------------
+next - jumps to next iteration of loop
+----------------------------------------
+=end
+
+puts 'Using for :'
+for i in 0 .. 4
+   puts i
+end
+
+puts 'Using each :'
+(0..4).each do |i|
+  if i <=2 
+    next
+  end
+  puts i
+end

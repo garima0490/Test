@@ -1,0 +1,43 @@
+=begin
+
+*Inheritance types supported in ruby
+*Scopes in ruby
+*Inherit a class
+*Super vs super()
+
+Types Supported - Single, Multilevel, Hierarichal, Hybrid
+
+
+Scope of class members :
+Methods - Public, Private, Protected(by default - Public)
+Instance and Class Variables - Always private(not accessible outside. exception - Accessor method)
+Constant - Always public (no Constant is inaccessible outside the class)
+
+
+
+class Subclass < Superclass
+....
+....
+end
+=end
+
+class Sample
+  private 
+    def p
+      puts "method"
+    end
+
+end
+
+class Child < Sample
+  def r
+    p
+  end
+end
+    
+
+obj1 = Child.new
+obj1.r
+
+ 
+ 

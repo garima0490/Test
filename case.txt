@@ -1,0 +1,24 @@
+=begin
+case expression
+[when expression [, expression ...] 
+   code ]...
+[else
+   code 
+end
+
+=end
+
+puts 'Enter the day number : '
+day = gets.chomp.to_i
+case day
+  when 1
+    puts 'Monday'
+  when 2
+    puts 'Tuesday'
+  when 3
+    puts 'Wednesday'
+  when 4 .. 7 
+    puts 'Thursday/Friday/Saturday/Sunday'
+  else
+    puts 'Wrong day number!!'
+end

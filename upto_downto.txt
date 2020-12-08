@@ -1,0 +1,10 @@
+
+i =19
+1.upto(4) do
+  puts i
+  i+=1
+end
+4.downto(1) do
+  |i|
+  puts i
+end

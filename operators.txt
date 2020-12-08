@@ -1,0 +1,33 @@
+=begin
+Arithmetic Operators -> +, -, *, /, %, **
+Comparison Operators -> ==, !=, >, <, >=, <=, <=>, ===
+Assignment Operators -> = ,+=, -=, *=, /=, %=, **=
+Bitwise Operators    -> & ,|, ^, ~, <<, >>
+Logical Operators    -> &&/and, ||/or, !/not
+Ternary Operator     -> ?:
+=end
+
+
+
+
+a,b = 8,4     #Parallel Assignment
+a += b         # a = a + b
+res = a <=> b
+puts res
+
+a= 2
+a**=4
+puts a
+val1 = (1 ... 10 ) === 10
+val2 = (1 .. 10 ) === 10
+puts val1
+puts val2
+
+j = 1
+less_than_4 = (j < 4)? true : false
+puts "less_than_4 : "+less_than_4.to_s
+
+ a = 8>>2
+ b = 8<<2
+ puts a
+puts b

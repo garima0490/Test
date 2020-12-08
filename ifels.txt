@@ -1,0 +1,28 @@
+=begin
+
+if <condition> 
+  code.....
+elsif <condition>
+  code.....
+  else
+    code....
+end
+
+=end
+
+puts 'Enter the number : '
+var = gets.chomp.to_i
+if var > 7
+  puts 'Greater than 7.'
+elsif var>4
+  puts 'Greater than 4 and less than equal to 7.'
+  else
+    puts 'Less than or equal to 4.'
+end
+
+
+=begin
+
+(condition) ? (result if condition is true) : (result if condition is false) 
+=end
+
